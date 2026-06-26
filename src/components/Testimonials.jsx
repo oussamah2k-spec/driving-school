@@ -80,10 +80,10 @@ const REVIEWS = [
 ];
 
 const STATS = [
-  { icon: <IconGrad />,   value: '+1500', label: 'Élèves formés' },
-  { icon: <IconTrophy />, value: '98%',   label: 'Taux de réussite' },
-  { icon: <IconStar />,   value: '10+',   label: "Années d'expérience" },
-  { icon: <IconCar />,    value: '7',     label: 'Catégories de permis' },
+  { icon: <IconGrad />,   value: '+1500', label: 'طالب تكوّن' },
+  { icon: <IconTrophy />, value: '98%',   label: 'نسبة النجاح' },
+  { icon: <IconStar />,   value: '10+',   label: 'سنوات الخبرة' },
+  { icon: <IconCar />,    value: '7',     label: 'أنواع الرخص' },
 ];
 
 /* ─── Component ────────────────────────────────────────────────── */
@@ -110,13 +110,12 @@ function Testimonials() {
 
         {/* ── Header ── */}
         <div className="testi__header">
-          <p className="testi__tagline fade-up">TÉMOIGNAGES</p>
+          <p className="testi__tagline fade-up">آراء الزبناء</p>
           <h2 className="testi__heading fade-up" style={{ transitionDelay: '0.1s' }}>
-            Ce que disent <span>nos élèves</span>
+            شنو كيقولو <span>طلابنا</span>
           </h2>
           <p className="testi__subtext fade-up" style={{ transitionDelay: '0.2s' }}>
-            Des centaines d'élèves nous ont fait confiance. Découvrez leurs témoignages sur leur
-            expérience chez Auto-École Oumarir.
+            مئات ديال الطلاب وثقو فينا. شوف تجاربهم مع مدرسة أومارير.
           </p>
         </div>
 
@@ -132,7 +131,7 @@ function Testimonials() {
                 controls
                 playsInline
                 preload="metadata"
-                aria-label="Témoignage vidéo – Auto-École Oumarir"
+                aria-label="فيديو شهادة — مدرسة أومارير"
               />
             </div>
           </div>
@@ -146,7 +145,7 @@ function Testimonials() {
                 style={{ transitionDelay: `${0.35 + idx * 0.1}s` }}
               >
                 <span className="testi__quote" aria-hidden="true"><IconQuote /></span>
-                <span className="testi__stars" aria-label="5 étoiles">★★★★★</span>
+                <span className="testi__stars" aria-label="5 نجوم">★★★★★</span>
                 <p className="testi__review">{review}</p>
                 <footer className="testi__card-footer">
                   <span className="testi__name">{name}</span>

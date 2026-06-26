@@ -44,26 +44,26 @@ const STEPS = [
   {
     id: 1,
     icon: <IconCard />,
-    title: 'Choisissez votre permis',
-    desc: 'Sélectionnez la catégorie de permis qui correspond à votre besoin.',
+    title: 'اختار الرخصة ديالك',
+    desc: 'اختار الكاتيغوري اللي تناسبك وتبدا عليها.',
   },
   {
     id: 2,
     icon: <IconClipboard />,
-    title: 'Remplissez le formulaire',
-    desc: "Complétez vos informations en quelques secondes depuis le formulaire d'inscription.",
+    title: 'عمّر الفورمولير',
+    desc: 'دخل معلوماتك فدقيقة عبر فورمولير التسجيل.',
   },
   {
     id: 3,
     icon: <IconPhone />,
-    title: 'Nous vous contactons',
-    desc: 'Notre équipe vous contacte rapidement pour confirmer votre demande et répondre à vos questions.',
+    title: 'كنتصلو بيك',
+    desc: 'الفريق ديالنا كيتصل بيك بسرعة باش يأكد طلبك ويجاوب على جميع أسئلتك.',
   },
   {
     id: 4,
     icon: <IconWheel />,
-    title: 'Commencez votre formation',
-    desc: 'Choisissez votre date et commencez votre apprentissage avec nos moniteurs qualifiés.',
+    title: 'ابدا التكوين',
+    desc: 'اختار التاريخ وابدا تتعلم السياقة مع أساتذة مختصين.',
   },
 ];
 
@@ -95,12 +95,12 @@ function Process() {
 
         {/* ── Section header ── */}
         <div className="process__header">
-          <p className="process__tagline fade-up">COMMENT S'INSCRIRE</p>
+          <p className="process__tagline fade-up">كيفاش تسجل؟</p>
           <h2 className="process__heading fade-up" style={{ transitionDelay: '0.1s' }}>
-            Votre inscription en <span>4 étapes simples</span>
+            التسجيل في <span>4 خطوات بسيطة</span>
           </h2>
           <p className="process__subtext fade-up" style={{ transitionDelay: '0.2s' }}>
-            Commencez votre formation rapidement grâce à un processus simple, rapide et professionnel.
+            ابدا التكوين ديالك بسرعة من خلال عملية سهلة واحترافية.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ function Process() {
         {/* ── CTA ── */}
         <div className="process__cta fade-up" style={{ transitionDelay: '0.7s' }}>
           <button className="btn btn--primary process__cta-btn" onClick={handleCta}>
-            Commencer mon inscription
+            ابدا التسجيل ديالي
           </button>
         </div>
 

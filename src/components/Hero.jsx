@@ -12,23 +12,23 @@ function Hero() {
 
       <div className="hero__content">
         <h1 className="hero__headline">
-          AUTO-ÉCOLE<br />
-          <span className="hero__accent">OUMARIR</span>
+          مدرسة أومارير<br />
+          <span className="hero__accent">للسياقة</span>
         </h1>
 
         <p className="hero__subtitle">
-          Votre réussite commence ici.<br />
-          Formation professionnelle pour permis B, C et EC avec des moniteurs expérimentés.
+          من هنا كتبدا الرحلة ديالك.<br />
+          تكوين احترافي لـ Permis B، C، CE، D وDE مع أساتذة مجازين ومحترفين.
         </p>
 
         <div className="hero__cta">
-          <a href="#courses" className="btn btn--primary">Commencer</a>
-          <a href="#contact" className="btn btn--outline">Nous contacter</a>
+          <a href="#courses" className="btn btn--primary">ابدا دابا</a>
+          <a href="#contact" className="btn btn--outline">تواصل معنا</a>
         </div>
       </div>
 
       <div className="hero__scroll-indicator" aria-hidden="true">
-        <span className="hero__scroll-text">Défiler</span>
+        <span className="hero__scroll-text">نزّل</span>
         <div className="hero__scroll-arrow" />
       </div>
     </section>

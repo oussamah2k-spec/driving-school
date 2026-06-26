@@ -77,13 +77,12 @@ function Contact() {
 
         {/* ── Header ── */}
         <div className="contact__header">
-          <p className="contact__tagline fade-up">CONTACT</p>
+          <p className="contact__tagline fade-up">تواصل معنا</p>
           <h2 className="contact__heading fade-up" style={{ transitionDelay: '0.1s' }}>
-            Contactez <span>Auto-École Oumarir</span>
+            تواصل مع <span>مدرسة أومارير</span>
           </h2>
           <p className="contact__subtext fade-up" style={{ transitionDelay: '0.2s' }}>
-            Notre équipe est à votre disposition pour répondre à toutes vos questions et vous
-            accompagner dans votre inscription.
+            الفريق ديالنا حاضر باش يجاوب على جميع أسئلتك ويرافقك فالتسجيل.
           </p>
         </div>
 
@@ -97,9 +96,9 @@ function Contact() {
             <div className="contact__card fade-up" style={{ transitionDelay: '0.15s' }}>
               <span className="contact__card-icon"><IconMapPin /></span>
               <div className="contact__card-content">
-                <h3 className="contact__card-title">Adresse</h3>
+                <h3 className="contact__card-title">العنوان</h3>
                 <p className="contact__card-text">
-                  Auto-École Oumarir<br />Taroudant, Maroc
+                  مدرسة أومارير<br />تارودانت، المغرب
                 </p>
               </div>
             </div>
@@ -108,7 +107,7 @@ function Contact() {
             <div className="contact__card fade-up" style={{ transitionDelay: '0.25s' }}>
               <span className="contact__card-icon"><IconPhone /></span>
               <div className="contact__card-content">
-                <h3 className="contact__card-title">Téléphone / WhatsApp</h3>
+                <h3 className="contact__card-title">الهاتف / واتساب</h3>
                 <p className="contact__card-text">+212 668 724 918</p>
                 <a
                   href="https://wa.me/212668724918"
@@ -117,7 +116,7 @@ function Contact() {
                   className="contact__btn contact__btn--whatsapp"
                 >
                   <IconWhatsApp />
-                  Contacter sur WhatsApp
+                  تواصل على واتساب
                 </a>
               </div>
             </div>
@@ -126,7 +125,7 @@ function Contact() {
             <div className="contact__card fade-up" style={{ transitionDelay: '0.35s' }}>
               <span className="contact__card-icon"><IconFacebook /></span>
               <div className="contact__card-content">
-                <h3 className="contact__card-title">Facebook</h3>
+                <h3 className="contact__card-title">فيسبوك</h3>
                 <a
                   href="https://www.facebook.com/profile.php?id=100083215574587"
                   target="_blank"
@@ -134,7 +133,7 @@ function Contact() {
                   className="contact__btn contact__btn--facebook"
                 >
                   <IconExternalLink />
-                  Visiter notre page Facebook
+                  زور صفحتنا على فيسبوك
                 </a>
               </div>
             </div>
@@ -143,9 +142,9 @@ function Contact() {
             <div className="contact__card fade-up" style={{ transitionDelay: '0.45s' }}>
               <span className="contact__card-icon"><IconClock /></span>
               <div className="contact__card-content">
-                <h3 className="contact__card-title">Horaires</h3>
+                <h3 className="contact__card-title">أوقات العمل</h3>
                 <p className="contact__card-text">
-                  <strong>Lundi – Samedi</strong><br />08:00 – 19:00
+                  <strong>الاثنين – السبت</strong><br />08:00 – 19:00
                 </p>
               </div>
             </div>
@@ -158,7 +157,7 @@ function Contact() {
               <iframe
                 className="contact__map-iframe"
                 src={MAP_SRC}
-                title="Localisation Auto-École Oumarir – Taroudant"
+                title="موقع مدرسة أومارير — تارودانت"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
@@ -170,7 +169,7 @@ function Contact() {
                 className="contact__map-btn"
               >
                 <IconExternalLink />
-                Ouvrir dans Google Maps
+                افتح فالخريطة
               </a>
             </div>
           </div>

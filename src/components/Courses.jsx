@@ -12,13 +12,13 @@ import imgParking from '../assets/images/permis/parking.jpg';
 
 /* ── Course catalogue ── */
 const COURSES = [
-  { id: 'A',       label: 'Permis A',                   desc: 'Motocycles et scooters — la liberté sur deux roues.',         img: imgA       },
-  { id: 'B',       label: 'Permis B',                   desc: 'Voitures particulières — le permis le plus demandé.',          img: imgB       },
-  { id: 'CE',      label: 'Permis CE',                  desc: 'Poids lourds avec remorque — formation professionnelle.',      img: imgCE      },
-  { id: 'D',       label: 'Permis D',                   desc: 'Transport en commun — conduite de bus et autocars.',           img: imgD       },
-  { id: 'DE',      label: 'Permis DE',                  desc: 'Bus articulé et transport de voyageurs spécialisé.',           img: imgDE      },
-  { id: 'code',    label: 'Code de la Route',            desc: 'Maîtrisez les règles et la signalisation routière.',          img: imgCode    },
-  { id: 'parking', label: 'Parking / Perfectionnement', desc: 'Manœuvres, créneau et perfectionnement en conduite.',         img: imgParking },
+  { id: 'A',       label: 'Permis A',                   desc: 'الدراجات والسكوتير — الحرية بزوج دواليب.',                       img: imgA       },
+  { id: 'B',       label: 'Permis B',                   desc: 'رخصة السيارة الخاصة — الرخصة اللي كيطلبها الجميع.',        img: imgB       },
+  { id: 'CE',      label: 'Permis CE',                  desc: 'الشاحنة الكبيرة مع المقطورة — تكوين احترافي.',         img: imgCE      },
+  { id: 'D',       label: 'Permis D',                   desc: 'النقل الجماعي — سياقة الحافلات والطوبيسات.',      img: imgD       },
+  { id: 'DE',      label: 'Permis DE',                  desc: 'الحافلة المفصلية ونقل المسافرين المتخصص.',             img: imgDE      },
+  { id: 'code',    label: 'كود الطريق',            desc: 'فهم القوانين والإشارات ديال الطريق بالكامل.',           img: imgCode    },
+  { id: 'parking', label: 'الباركينغ والتحسين', desc: 'المناورات، التوقف، وتحسين مهارات السياقة.',         img: imgParking },
 ];
 
 /* ── WhatsApp icon ── */
@@ -31,18 +31,18 @@ const IconWhatsApp = () => (
 /* ── WhatsApp message builder ── */
 const buildWaUrl = (selected, form) => {
   const msg = [
-    'Bonjour Auto-École Oumarir,',
+    'السلام عليكم مدرسة أومارير،',
     '',
-    "Je souhaite m'inscrire.",
+    'بغيت نسجل.',
     '',
-    `Permis : ${selected ? selected.label : '—'}`,
+    `الرخصة: ${selected ? selected.label : '—'}`,
     '',
-    `Nom : ${form.nom}`,
-    `Adresse : ${form.adresse}`,
-    `Téléphone : ${form.telephone}`,
-    `Date souhaitée : ${form.date}`,
+    `الاسم: ${form.nom}`,
+    `العنوان: ${form.adresse}`,
+    `الهاتف: ${form.telephone}`,
+    `التاريخ المرغوب: ${form.date}`,
     '',
-    'Merci.',
+    'شكراً.',
   ].join('\n');
   return `https://wa.me/212668724918?text=${encodeURIComponent(msg)}`;
 };
@@ -98,12 +98,12 @@ function Courses() {
 
         {/* ── Section header ── */}
         <div className="courses__header">
-          <p className="courses__tagline fade-up">Nos formations</p>
+          <p className="courses__tagline fade-up">تكويناتنا</p>
           <h2 className="courses__heading fade-up" style={{ transitionDelay: '0.1s' }}>
-            Choisissez votre formation
+            اختار التكوين ديالك
           </h2>
           <p className="courses__subtext fade-up" style={{ transitionDelay: '0.2s' }}>
-            Cliquez sur une formation pour ouvrir le formulaire d'inscription.
+            كليك على التكوين اللي باغيه باش تفتح فورمولير التسجيل.
           </p>
         </div>
 
@@ -127,13 +127,13 @@ function Courses() {
                   <img src={img} alt={label} className="courses__card-img" />
                   <div className="courses__card-overlay" aria-hidden="true" />
                   {isActive && (
-                    <span className="courses__card-selected" aria-hidden="true">✓ Sélectionné</span>
+                    <span className="courses__card-selected" aria-hidden="true">✓ مختار</span>
                   )}
                 </div>
                 <div className="courses__card-body">
                   <h3 className="courses__card-label">{label}</h3>
                   <p className="courses__card-desc">{desc}</p>
-                  <span className="courses__card-btn" aria-hidden="true">S'inscrire →</span>
+                  <span className="courses__card-btn" aria-hidden="true">سجل دابا ←</span>
                 </div>
               </div>
             );
@@ -157,7 +157,7 @@ function Courses() {
           aria-labelledby="modal-title"
         >
           {/* Close */}
-          <button className="modal__close" onClick={closeModal} aria-label="Fermer la fenêtre">
+          <button className="modal__close" onClick={closeModal} aria-label="أغلق">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -166,9 +166,9 @@ function Courses() {
 
           {/* Header */}
           <div className="modal__header">
-            <h3 className="modal__title" id="modal-title">Formulaire d'inscription</h3>
-            <div className="modal__permit">
-              <span className="modal__permit-label">Permis sélectionné</span>
+            <h3 className="modal__title" id="modal-title">فورمولير التسجيل</h3>
+              <div className="modal__permit">
+                <span className="modal__permit-label">الرخصة المختارة</span>
               <span className="modal__permit-value">{selected?.label ?? '—'}</span>
             </div>
           </div>
@@ -176,25 +176,25 @@ function Courses() {
           {/* Fields */}
           <div className="modal__fields">
             <div className="modal__field">
-              <label className="modal__label" htmlFor="m-nom">Nom complet</label>
+              <label className="modal__label" htmlFor="m-nom">الاسم الكامل</label>
               <input id="m-nom" className="modal__input" type="text" name="nom"
-                placeholder="Votre nom et prénom" value={form.nom}
+                placeholder="اسمك الكامل" value={form.nom}
                 onChange={handleInput} autoComplete="name" />
             </div>
             <div className="modal__field">
-              <label className="modal__label" htmlFor="m-adresse">Adresse</label>
+              <label className="modal__label" htmlFor="m-adresse">العنوان</label>
               <input id="m-adresse" className="modal__input" type="text" name="adresse"
-                placeholder="Votre adresse complète" value={form.adresse}
+                placeholder="عنوانك بالكامل" value={form.adresse}
                 onChange={handleInput} autoComplete="street-address" />
             </div>
             <div className="modal__field">
-              <label className="modal__label" htmlFor="m-tel">Téléphone</label>
+              <label className="modal__label" htmlFor="m-tel">الهاتف</label>
               <input id="m-tel" className="modal__input" type="tel" name="telephone"
                 placeholder="+212 6XX XXX XXX" value={form.telephone}
                 onChange={handleInput} autoComplete="tel" />
             </div>
             <div className="modal__field">
-              <label className="modal__label" htmlFor="m-date">Date souhaitée</label>
+              <label className="modal__label" htmlFor="m-date">التاريخ المرغوب</label>
               <input id="m-date" className="modal__input modal__input--date" type="date"
                 name="date" value={form.date} onChange={handleInput} />
             </div>
@@ -208,11 +208,11 @@ function Courses() {
             className="modal__whatsapp"
           >
             <IconWhatsApp />
-            Envoyer via WhatsApp
+            أرسل على واتساب
           </a>
 
           <p className="modal__note">
-            Votre message sera pré-rempli et envoyé directement sur WhatsApp.
+            الرسالة غادي تتبعث على واتساب مع جميع المعلومات.
           </p>
         </div>
       </div>,

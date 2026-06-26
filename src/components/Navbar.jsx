@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import logo from '../assets/logo/logo.png';
 
 const NAV_LINKS = [
-  { label: 'Accueil',     href: '#home' },
-  { label: 'À Propos',   href: '#about' },
-  { label: 'Formations', href: '#courses' },
-  { label: 'Témoignages', href: '#testimonials' },
-  { label: 'Contact',    href: '#contact' },
+  { label: 'الديار',         href: '#home' },
+  { label: 'علاش حنا',       href: '#about' },
+  { label: 'التكوينات',     href: '#courses' },
+  { label: 'آراء الزبناء', href: '#testimonials' },
+  { label: 'تواصل معنا',   href: '#contact' },
 ];
 
 function Navbar() {
@@ -45,7 +45,7 @@ function Navbar() {
         <button
           className={`navbar__hamburger${menuOpen ? ' navbar__hamburger--open' : ''}`}
           onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle navigation menu"
+          aria-label="افتح/أغلق القائمة"
           aria-expanded={menuOpen}
         >
           <span />

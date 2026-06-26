@@ -41,12 +41,12 @@ const IconClock = () => (
 
 /* ─── Data ─────────────────────────────────────────────────────── */
 const NAV_LINKS = [
-  { label: 'Accueil',      href: '#home' },
-  { label: 'À Propos',     href: '#about' },
-  { label: 'Formations',   href: '#courses' },
-  { label: 'Notre Process',href: '#process' },
-  { label: 'Témoignages',  href: '#testimonials' },
-  { label: 'Contact',      href: '#contact' },
+  { label: 'الديار',          href: '#home' },
+  { label: 'علاش حنا',          href: '#about' },
+  { label: 'التكوينات',        href: '#courses' },
+  { label: 'كيفاش تسجل',      href: '#process' },
+  { label: 'آراء الزبناء',    href: '#testimonials' },
+  { label: 'تواصل معنا',      href: '#contact' },
 ];
 
 /* ─── Component ─────────────────────────────────────────────────── */
@@ -69,10 +69,10 @@ function Footer() {
 
             {/* Col 1 – Brand */}
             <motion.div className="footer__brand" variants={fadeLeft}>
-              <img src={logo} alt="Auto-École Oumarir" className="footer__logo" loading="lazy" />
+              <img src={logo} alt="مدرسة أومارير" className="footer__logo" loading="lazy" />
               <p className="footer__brand-desc">
-                Auto-École Oumarir — votre partenaire de confiance pour obtenir votre permis
-                à Taroudant, Maroc. Formation sérieuse, moniteurs agréés.
+                مدرسة أومارير — رفيقك الموثوق باش تحصل على البرمي ديالك
+                فتارودانت، المغرب. تكوين جاد ومنظم، أساتذة مجازين ومحترفين.
               </p>
               <div className="footer__socials">
                 <a
@@ -98,7 +98,7 @@ function Footer() {
 
             {/* Col 2 – Navigation */}
             <motion.div className="footer__col" variants={fadeUp}>
-              <h3 className="footer__col-title">Navigation</h3>
+              <h3 className="footer__col-title">الروابط</h3>
               <ul className="footer__nav-links">
                 {NAV_LINKS.map(({ label, href }) => (
                   <li key={label}>
@@ -110,11 +110,11 @@ function Footer() {
 
             {/* Col 3 – Contact */}
             <motion.div className="footer__col" variants={fadeRight}>
-              <h3 className="footer__col-title">Contact</h3>
+              <h3 className="footer__col-title">تواصل معنا</h3>
               <ul className="footer__info-list">
                 <li className="footer__info-item">
                   <IconMapPin />
-                  <span>Taroudant, Maroc</span>
+                  <span>تارودانت، المغرب</span>
                 </li>
                 <li className="footer__info-item">
                   <IconPhone />
@@ -122,7 +122,7 @@ function Footer() {
                 </li>
                 <li className="footer__info-item">
                   <IconClock />
-                  <span>Lun – Sam &nbsp;·&nbsp; 08:00 – 19:00</span>
+                  <span>الاثنين – السبت · 08:00 – 19:00</span>
                 </li>
               </ul>
               <a
@@ -132,7 +132,7 @@ function Footer() {
                 className="footer__wa-btn"
               >
                 <IconWhatsApp />
-                Contacter sur WhatsApp
+                تواصل على واتساب
               </a>
             </motion.div>
 
@@ -144,10 +144,10 @@ function Footer() {
       <div className="footer__bottom">
         <div className="footer__container footer__bottom-inner">
           <p className="footer__copy">
-            © {year} Auto-École Oumarir. Tous droits réservés.
+            © {year} مدرسة أومارير. جميع الحقوق محفوظة.
           </p>
           <p className="footer__legal">
-            Taroudant, Maroc &nbsp;·&nbsp;{' '}
+            تارودانت، المغرب &nbsp;·&nbsp;{' '}
             <a href="https://wa.me/212668724918" target="_blank" rel="noopener noreferrer">
               +212 668 724 918
             </a>
